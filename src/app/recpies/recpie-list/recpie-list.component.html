@@ -1,36 +1,7 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-3 col-sm-6" *ngFor="let recipe of recipes">
-            <div class="card hovercard" >
-                <div class="cardheader">
-                    <img src="{{recipe.backimage}}" alt="">
-                </div>
-                <div class="avatar">
-                    <img alt="" src="{{recipe.avatar}}">
-                </div>
-                <div class="info">
-                    <div class="title">
-                        <a target="_blank" href="#">{{recipe.title}}</a>
-                    </div>
-                    <div class="desc">{{recipe.description}}</div>
-                </div>
-                <div class="bottom">
-                    <a class="btn btn-primary btn-twitter btn-sm" href="#">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a class="btn btn-danger btn-sm" rel="publisher" href="#">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                    <a class="btn btn-primary btn-sm" rel="publisher" href="#">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a class="btn btn-warning btn-sm" rel="publisher" href="#">
-                        <i class="fa fa-behance"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
+        <app-recpie-item *ngFor="let recipeEl of recipes" [recipe] = "recipeEl" (selectedRecipe) = "onEntekhabRecipe($event)"></app-recpie-item>
     </div>
 </div>
+
+         

@@ -1,1 +1,2 @@
-<app-recpie-list></app-recpie-list>
+<app-recpie-list (recipeSelected) = "onRecipeSelected($event)"></app-recpie-list>
+<app-recpie-detail [recipedetail] = "recipe" *ngIf="recipe"></app-recpie-detail>
