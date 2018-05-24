@@ -5,6 +5,12 @@
         <a target="_blank" href="#">{{recipedetail.title}}</a>
       </div>
       <div class="desc">{{recipedetail.description}}</div>
+      <h3>مواد غذایی</h3>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let ingredient of recipedetail.ingredients">
+          {{ingredient.name}} {{ingredient.amount}}
+        </li>
+      </ul>
     </div>
     <div class="col-md-4">
       <img class="img-responsive" src="{{recipedetail.backimage}}" alt="">

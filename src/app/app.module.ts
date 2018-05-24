@@ -1,3 +1,4 @@
+import { ShoppingListService } from './share/services/shopping-list.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -28,7 +29,7 @@ import { DropdownDirective } from './share/directive/dropdown.directive';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

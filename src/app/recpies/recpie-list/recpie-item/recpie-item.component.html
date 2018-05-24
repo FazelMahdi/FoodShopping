@@ -1,16 +1,16 @@
 <div class="col-lg-3 col-sm-6" >
     <div class="card hovercard" >
         <div class="cardheader">
-            <img src="{{recipe.backimage}}" alt="">
+            <img src="{{recipeFromList.backimage}}" alt="">
         </div>
         <div class="avatar">
-            <img alt="" src="{{recipe.avatar}}">
+            <img alt="" src="{{recipeFromList.avatar}}">
         </div>
         <div class="info">
             <div class="title">
-                <a target="_blank" (click) = "onSelectedRecipe()">{{recipe.title}}</a>
+                <a target="_blank" (click) = "onSelectedRecipe()">{{recipeFromList.title}}</a>
             </div>  
-            <div class="desc">{{recipe.description}}</div>
+            <div class="desc">{{recipeFromList.description}}</div>
         </div>
     </div>
 </div>

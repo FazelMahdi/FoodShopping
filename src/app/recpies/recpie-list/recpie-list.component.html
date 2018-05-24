@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <app-recpie-item *ngFor="let recipeEl of recipes" [recipe] = "recipeEl" (selectedRecipe) = "onEntekhabRecipe($event)"></app-recpie-item>
+        <app-recpie-item *ngFor="let recipeEl of recipes" [recipeFromList] = "recipeEl" ></app-recpie-item>
     </div>
 </div>
 

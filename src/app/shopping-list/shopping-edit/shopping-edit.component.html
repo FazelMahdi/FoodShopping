@@ -1,3 +1,23 @@
-<p>
-  shopping-edit works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="name">نام ماده</label>
+          <input for="text" id="name" class="form-control" #inputName>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="amount">مقدار</label>
+          <input type="text" id="amount" class="form-control" #inputAmount>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 form-group">
+          <button class="btn btn-primary">بازنویسی</button>
+          <button class="btn btn-danger">حذف</button>
+          <button class="btn btn-success" (click)="addIngredient()">افزودن</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
