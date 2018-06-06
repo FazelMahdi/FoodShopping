@@ -2,15 +2,15 @@
   <div class="row">
     <div class="col-md-8">
       <div class="title">
-        <a target="_blank" href="#">{{recipedetail.title}}</a>
+        <a target="_blank" style= "cursor: pointer">{{recipedetail.title}}</a>
       </div>
       <div class="desc">{{recipedetail.description}}</div>
       <div class="btn-group" appDropdown>
         <button class="btn btn-primary dropdown-toggle">مدیریت دستور غدا <span class="caret"></span></button>
           <ul class="dropdown-menu">
-              <li><a href="#" (click)="addToShoppingList()">افزودن به لیست مواد غذایی</a></li>
-              <li><a href="#">ویرایش دستور غذا</a></li>
-              <li><a href="#">حذف دستور غذا</a></li>
+              <li><a style= "cursor: pointer" (click)="addToShoppingList()">افزودن به لیست مواد غذایی</a></li>
+              <li><a style= "cursor: pointer" (click)="onEditRecipe()">ویرایش دستور غذا</a></li>
+              <li><a style= "cursor: pointer">حذف دستور غذا</a></li>
           </ul>
       </div>
       <h3>مواد غذایی</h3>

@@ -1,7 +1,12 @@
 <div class="container">
     <div class="row">
-        <app-recpie-item *ngFor="let recipeEl of recipes" [recipeFromList] = "recipeEl" ></app-recpie-item>
+        <div class="col-xs-12">
+            <button class="btn btn-success" (click)="onAddRecipe()">افزودن دستور غذایی</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-recpie-item *ngFor="let recipeEl of recipes; let i=index" [recipeFromList]="recipeEl" [index]="i"></app-recpie-item>
+        </div>
     </div>
 </div>
-
-         
