@@ -16,6 +16,12 @@ export class ShoppingListService{
 
       addIngredient(name:string, amount:number){
           this.ingredients.push(  new Ingredient(name, amount))
-          this.addIngredientEvent.emit(this.ingredients)
+          this.addIngredientEvent.emit(this.ingredients.slice())
       }
+      addIngreFromRecipe(ingredients: Ingredient[]){
+          this.ingredients.push(...ingredients)
+          this.addIngredientEvent.emit(this.ingredients.slice())
+      }
+
+
 }

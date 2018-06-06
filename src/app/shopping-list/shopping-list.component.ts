@@ -21,3 +21,8 @@ export class ShoppingListComponent implements OnInit {
   }
 
 }
+
+
+// .bdaia-header-default .header-container {
+//   display: none;
+// }
