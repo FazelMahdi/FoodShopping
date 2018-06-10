@@ -1,12 +1,11 @@
 import { ShoppingListService } from './shopping-list.service';
 import { Ingredient } from './../../shopping-list/ingredient.model';
 import { Recipe } from './../../recpies/recipe.model';
-import { EventEmitter, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class RecipeService {
 
-    selectedRecipe = new EventEmitter<Recipe>();
 
     recipes: Recipe[] = [
         new Recipe('ماکارونی', 'http://via.placeholder.com/350x150', 
